@@ -25,7 +25,7 @@
             <StackLayout 
                 Orientation="Horizontal">
                 
-                <Stepper Value="{Binding Item.FallbackValue, Mode=TwoWay}"
+                <Stepper Value="{Binding Item.Value, Mode=TwoWay}"
                          Minimum="0"
                          Maximum="10"
                          Increment="1"
