@@ -21,7 +21,15 @@
             <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
 
             <Label Text="Value" FontSize="Medium" />
-            <Editor Text="{Binding Item.Value}" d:Text="Item description" FontSize="Small" Margin="0" />
+            <Stepper 
+                Value="{Binding Item.FallbackValue, Mode=TwoWay}"
+                Minimum="0"
+                Maximum="10"
+                Increment="1"
+                ValueChanged="Value_OnStepperValueChanged"/>
+            <Label x:Name="ValueValue" 
+                   Text="{Binding Item.Value}" 
+                   FontSize="Medium" />
         </StackLayout>
     </ContentPage.Content>
     
