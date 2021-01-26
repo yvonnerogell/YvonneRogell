@@ -13,7 +13,8 @@ namespace Mine
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            // Register database with app
+            DependencyService.Register<DatabaseService>();
             MainPage = new MainPage();
         }
 
