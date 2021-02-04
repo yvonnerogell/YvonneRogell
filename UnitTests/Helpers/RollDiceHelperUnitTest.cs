@@ -22,7 +22,7 @@ namespace UnitTests.Models
         }
 
         [Test]
-        public void RollDice_Valid_Roll_1_Dive_6_Should_Return_Between_1_And_6()
+        public void RollDice_Valid_Roll_1_Dice_6_Should_Return_Between_1_And_6()
 		{
             // Arrange
 
