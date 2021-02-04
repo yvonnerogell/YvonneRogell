@@ -40,5 +40,18 @@ namespace UnitTests.Models
             Assert.AreEqual("Text", result.Text);
             Assert.AreEqual(1, result.Value);
 		}
+
+        public void ItemModel_Get_Valid_Default_Should_Pass()
+		{
+            // Arrange
+
+            // Act
+            var result = new ItemModel();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(0, result.Value);
+		}
     }
 }
